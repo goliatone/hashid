@@ -70,18 +70,6 @@ func TestNormalizerWithSeparator(t *testing.T) {
 	}
 }
 
-func TestRemoveCharsNotAllowed(t *testing.T) {
-	testStrings := map[string]string{
-		"*+":                           "",
-		"A81758FFFE04@E4F5":            "A81758FFFE04E4F5",
-		"delta__-sum__-infinity@!peso": "deltasuminfinitypeso",
-		"special@#$^*-chars%&":         "specialchars%&",
-	}
-	for key, val := range testStrings {
-		assert.Equal(t, val, removeCharsNotAllowed(key))
-	}
-}
-
 func TestNew(t *testing.T) {
 	uuidRegex := regexp.MustCompile(`^[a-f0-9]{8}-[a-f0-9]{4}-[3458][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$`)
 

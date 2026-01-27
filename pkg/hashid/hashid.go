@@ -116,6 +116,10 @@ func WithCustomCharMap(mapping map[string]string) Option {
 	}
 }
 
+// groupID := fmt.Sprintf("group:%s", message.ID.String())
+// gid, err := hashid.NewUUID(groupID)
+// func NewUUIDSptf(input, )
+
 func NewUUID(input string, opts ...Option) (uuid.UUID, error) {
 	id, err := New(input, opts...)
 	if err != nil {
@@ -183,11 +187,9 @@ func New(input string, opts ...Option) (string, error) {
 
 	var normalizer func(string) (string, error)
 	if config.charMap != nil {
-		n, err := newNormalizer(config.charMap, "-")
-		if err != nil {
-			return "", err
+		normalizer = func(input string) (string, error) {
+			return NormalizerWithCharMap(input, config.charMap)
 		}
-		normalizer = n.normalize
 	} else {
 		normalizer = config.normalizer
 	}
