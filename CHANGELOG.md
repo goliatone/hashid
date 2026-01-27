@@ -1,12 +1,35 @@
 # Changelog
 
+# [0.2.0](https://github.com/goliatone/hashid/compare/v0.1.1...v0.2.0) - (2026-01-27)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- Task for ci build ([e9dd65e](https://github.com/goliatone/hashid/commit/e9dd65ed8d0cecbf73f618625f68e9b00455dd94))  - (goliatone)
+- Cliff remove duplicated mesg ([d34117a](https://github.com/goliatone/hashid/commit/d34117a42a0e7e0f6de75db119056bb183b451ec))  - (goliatone)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump version: v0.2.0 ([af2a08a](https://github.com/goliatone/hashid/commit/af2a08a82e76d0a6c43aad5555ca17977436d4b5))  - (goliatone)
+
+## <!-- 16 -->➕ Add
+
+- Use go-slug to normalize strings ([6cde9ed](https://github.com/goliatone/hashid/commit/6cde9edd52cc88aa97f4e575ff5025c8ffaec49d))  - (goliatone)
+- Testdata for custom map ([37348df](https://github.com/goliatone/hashid/commit/37348df394ed1e143a3844dc3966fa7f777fa547))  - (goliatone)
+
+## <!-- 3 -->📚 Documentation
+
+- Update changelog for v0.1.1 ([deb02e4](https://github.com/goliatone/hashid/commit/deb02e4f0f214027c514ba79697ce7c2b6b82c52))  - (goliatone)
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update depsc ([c123405](https://github.com/goliatone/hashid/commit/c123405841bb6d8b11d85eb95b48d253bc6ea0c8))  - (goliatone)
+
 # [0.1.1](https://github.com/goliatone/hashid/compare/v0.1.0...v0.1.1) - (2024-12-29)
 
 ## <!-- 1 -->🐛 Bug Fixes
 
 - Typo ([1fb2597](https://github.com/goliatone/hashid/commit/1fb25974d0a3d50339cb6a7cca1518db077bac5b))  - (goliatone)
 - Rename functions ([258e353](https://github.com/goliatone/hashid/commit/258e3537fccf573214dd5faf89856d67363f5791))  - (goliatone)
-- Rename functions ([496c186](https://github.com/goliatone/hashid/commit/496c186b8ab8e1d0741feb7431f3195f5ab158dc))  - (goliatone)
 
 ## <!-- 13 -->📦 Bumps
 
@@ -38,10 +61,7 @@
 ## <!-- 16 -->➕ Add
 
 - New methods for returning UUIDs and short IDs ([f61c8d7](https://github.com/goliatone/hashid/commit/f61c8d7350d6710cd388cfc4271614f270e4d364))  - (goliatone)
-- New methods for returning UUIDs and short IDs ([983e0aa](https://github.com/goliatone/hashid/commit/983e0aa1437d190aaaaa09072032b2cade0b2bf2))  - (goliatone)
 - Update documentation ([098dbe1](https://github.com/goliatone/hashid/commit/098dbe1bd2a9c801fd1f3df81acb73948d90fce6))  - (goliatone)
-- Update documentation ([2970155](https://github.com/goliatone/hashid/commit/29701556f0ce395044c2206f0b9997a152aecfd9))  - (goliatone)
-- Update documentation ([1e37753](https://github.com/goliatone/hashid/commit/1e37753cc57571f6246cbed8836797339f5ae4e9))  - (goliatone)
 
 ## <!-- 30 -->📝 Other
 
@@ -131,7 +151,6 @@
 
 - Update goreleaser template ([c8343bb](https://github.com/goliatone/hashid/commit/c8343bb2c4a0c2afbf0704e9f476c78254aedb39))  - (goliatone)
 - Go releaser deprecated flag ([364cd62](https://github.com/goliatone/hashid/commit/364cd620c5694c08047d4b3f3eb6ad509ccc7ad6))  - (goliatone)
-- Go releaser deprecated flag ([a1f4364](https://github.com/goliatone/hashid/commit/a1f4364ed68863600ff94c04d7b2aff430f9f4a9))  - (goliatone)
 
 ## <!-- 13 -->📦 Bumps
 
@@ -150,19 +169,14 @@
 - Version file ([96126b4](https://github.com/goliatone/hashid/commit/96126b49ceb1d1a2029d17515d8e65c315b3e75c))  - (goliatone)
 - Github workflow ([8b4372c](https://github.com/goliatone/hashid/commit/8b4372cce530baffa00839d610c6bedcc2c0f085))  - (goliatone)
 - Goreleaser ([d450215](https://github.com/goliatone/hashid/commit/d450215e6a58bc891e91029f18911a084a3f754d))  - (goliatone)
-- Goreleaser ([fa8416c](https://github.com/goliatone/hashid/commit/fa8416c1cea2b2837acd477c2846afcb79bb8a0b))  - (goliatone)
 - Use version package ([edf3ead](https://github.com/goliatone/hashid/commit/edf3eada9c29dff02544ebf435a576eaedf53439))  - (goliatone)
-- Use version package ([2247c50](https://github.com/goliatone/hashid/commit/2247c50bdcd9abbe419b545ab438991b3e385c93))  - (goliatone)
 - LICENSE file ([c427123](https://github.com/goliatone/hashid/commit/c42712312f592ec58e9fcb6781ff20063f630b3e))  - (goliatone)
 - Add README ([245e394](https://github.com/goliatone/hashid/commit/245e394bf6a381285a1ee4dab0e19e133898f227))  - (goliatone)
 - Cli application ([6968b61](https://github.com/goliatone/hashid/commit/6968b61b4f4b47612917c91d55ae65d0eaf35934))  - (goliatone)
 - Normalization helper ([de476a8](https://github.com/goliatone/hashid/commit/de476a8f8eedf513019c435f5e69674e65e9c842))  - (goliatone)
-- Normalization helper ([12c005b](https://github.com/goliatone/hashid/commit/12c005bb6fba851c5b3a0fec87491828e8120145))  - (goliatone)
 - Hashid implementation ([3b881dc](https://github.com/goliatone/hashid/commit/3b881dcde059cbf104c255305d7a6c4b7ef570a7))  - (goliatone)
-- Hashid implementation ([ad5e1e9](https://github.com/goliatone/hashid/commit/ad5e1e9ca825d22a4b24d0fcbf35aede2a690b4d))  - (goliatone)
 - Tests for charmap ([0e92ce5](https://github.com/goliatone/hashid/commit/0e92ce579e97a7a23bf5aefa403fefe865fd3d72))  - (goliatone)
 - Charmap for loading and managing replacement files ([b24177c](https://github.com/goliatone/hashid/commit/b24177c7dd08445079fc61ac797c1947c027b8e1))  - (goliatone)
-- Charmap for loading and managing replacement files ([5eaa63d](https://github.com/goliatone/hashid/commit/5eaa63d160f3a12f71000207ced1caa6497b91dc))  - (goliatone)
 - Deps ([55b42f3](https://github.com/goliatone/hashid/commit/55b42f3fe4ccd8aceec89b38ec17a116aedb4903))  - (goliatone)
 
 ## <!-- 26 -->🔄 Update
