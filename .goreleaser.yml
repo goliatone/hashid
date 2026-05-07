@@ -56,6 +56,7 @@ brews:
     repository:
       owner: goliatone
       name: homebrew-tap
+    directory: Formula
     description: deterministic globally unique identifiers.
     homepage: https://github.com/goliatone/hashid
     license: "MIT"
