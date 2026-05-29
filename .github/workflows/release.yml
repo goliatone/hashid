@@ -6,6 +6,8 @@ on:
 jobs:
   goreleaser:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       # Update to the latest versions that support Node 16
       - uses: actions/checkout@v3
@@ -19,7 +21,8 @@ jobs:
         with:
           args: release
         env:
-          GITHUB_TOKEN: ${{ secrets.GO_RELEASER_HOMEBREW_TAP }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HOMEBREW_TAP_GITHUB_TOKEN: ${{ secrets.GO_RELEASER_HOMEBREW_TAP }}
       - name: "Create latest tag"
         uses: EndBug/latest-tag@latest
         with:
