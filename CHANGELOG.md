@@ -1,5 +1,19 @@
 # Changelog
 
+# [0.2.2](https://github.com/goliatone/hashid/compare/v0.2.1...v0.2.2) - (2026-05-29)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump version: v0.2.2 ([4da714a](https://github.com/goliatone/hashid/commit/4da714a763132df9c8c885217140aaf4b3e26205))  - (goliatone)
+
+## <!-- 29 -->👷 CI/CD
+
+- Pass Homebrew tap token to GoReleaser ([c9553bf](https://github.com/goliatone/hashid/commit/c9553bf907bfe60c16d3ec73e1a6fb4c671554de))  - (goliatone)
+
+## <!-- 3 -->📚 Documentation
+
+- Update changelog for v0.2.1 ([40583ef](https://github.com/goliatone/hashid/commit/40583effeb65b0d7a58d03094f56e0f13670ddad))  - (goliatone)
+
 # [0.2.1](https://github.com/goliatone/hashid/compare/v0.2.0...v0.2.1) - (2026-05-29)
 
 ## <!-- 1 -->🐛 Bug Fixes
