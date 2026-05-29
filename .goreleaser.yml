@@ -22,10 +22,12 @@ builds:
     main: "./cmd/hashid/main.go"
     binary: "hashid"
     ldflags:
-      - -s -w
-      - -X github.com/goliatone/hashid/pkg/version.Tag=v{{.Version}}
-      - -X github.com/goliatone/hashid/pkg/version.Time={{.Date}}
-      - -X github.com/goliatone/hashid/pkg/version.User=goliatone
+      - >-
+        -s -w
+        -X github.com/goliatone/hashid/pkg/version.Tag={{ .Version }}
+        -X github.com/goliatone/hashid/pkg/version.Time={{ .Date }}
+        -X github.com/goliatone/hashid/pkg/version.User=goreleaser
+        -X github.com/goliatone/hashid/pkg/version.Commit={{ .FullCommit }}
 archives:
   - id: hashid
     name_template: >-
@@ -38,7 +40,7 @@ archives:
 checksum:
   name_template: "checksums.txt"
 snapshot:
-  version_template: "{{ .Tag }}-next"
+  version_template: "{{ incpatch .Version }}-next"
 changelog:
   use: github
   sort: asc
@@ -51,17 +53,23 @@ changelog:
       - "^Update README"
       - "merge fix"
   format: '{{ .SHA }}: {{ .Message }} ({{ with .AuthorUsername }}@{{ . }}{{ else }}{{ .AuthorName }} <{{ .AuthorEmail }}>{{ end }})'
-brews:
+homebrew_casks:
   - name: hashid
+    binaries:
+      - hashid
     repository:
       owner: goliatone
       name: homebrew-tap
-    directory: Formula
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    directory: Casks
     description: deterministic globally unique identifiers.
     homepage: https://github.com/goliatone/hashid
-    license: "MIT"
-    test: |
-      system "#{bin}/hashid -version"
+    hooks:
+      post:
+        install: |
+          if OS.mac?
+            system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/hashid"]
+          end
 nfpms:
   - id: hashid
     file_name_template: >-
