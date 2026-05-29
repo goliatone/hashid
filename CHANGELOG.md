@@ -1,5 +1,23 @@
 # Changelog
 
+# [0.2.1](https://github.com/goliatone/hashid/compare/v0.2.0...v0.2.1) - (2026-05-29)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- Goreleaser setup ([e949da4](https://github.com/goliatone/hashid/commit/e949da4a3e7392761b9416bcf0e13225f35838db))  - (goliatone)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump version: v0.2.1 ([010fda3](https://github.com/goliatone/hashid/commit/010fda3f3097eb31e5b4395ba3adb567be8f6167))  - (goliatone)
+
+## <!-- 3 -->📚 Documentation
+
+- Update changelog for v0.2.0 ([c7e6652](https://github.com/goliatone/hashid/commit/c7e66521600bba1958d4577dcb7964f782b2cb4f))  - (goliatone)
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Migrate Homebrew release to cask ([22a2ac0](https://github.com/goliatone/hashid/commit/22a2ac039c8b3ed8674145e487e9c33441744982))  - (goliatone)
+
 # [0.2.0](https://github.com/goliatone/hashid/compare/v0.1.1...v0.2.0) - (2026-01-27)
 
 ## <!-- 1 -->🐛 Bug Fixes
