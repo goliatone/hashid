@@ -64,12 +64,14 @@ homebrew_casks:
     directory: Casks
     description: deterministic globally unique identifiers.
     homepage: https://github.com/goliatone/hashid
-    hooks:
-      post:
-        install: |
-          if OS.mac?
-            system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/hashid"]
-          end
+    # Escape the Homebrew path token so GoReleaser leaves it for install time.
+    custom_block: |
+      postflight_steps do
+        on_macos do
+          run "/usr/bin/xattr",
+              args: ["-dr", "com.apple.quarantine", "{{ "{{staged_path}}" }}/hashid"]
+        end
+      end
 nfpms:
   - id: hashid
     file_name_template: >-
