@@ -1,5 +1,19 @@
 # Changelog
 
+# [0.2.3](https://github.com/goliatone/hashid/compare/v0.2.2...v0.2.3) - (2026-09-13)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- Goreleaser setup ([9b84d98](https://github.com/goliatone/hashid/commit/9b84d984ed47681612ecd50f682f14fa73fe0d2a))  - (goliatone)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump version: v0.2.3 ([4b3502a](https://github.com/goliatone/hashid/commit/4b3502a37c21f275c8df476b0d453a71ad88d534))  - (goliatone)
+
+## <!-- 3 -->📚 Documentation
+
+- Update changelog for v0.2.2 ([7e9781c](https://github.com/goliatone/hashid/commit/7e9781cafd12c830c21d02e6c31397640e52f4c9))  - (goliatone)
+
 # [0.2.2](https://github.com/goliatone/hashid/compare/v0.2.1...v0.2.2) - (2026-05-29)
 
 ## <!-- 13 -->📦 Bumps
